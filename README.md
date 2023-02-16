@@ -1,0 +1,2 @@
+# charset
+QuakeWorld charset editor
