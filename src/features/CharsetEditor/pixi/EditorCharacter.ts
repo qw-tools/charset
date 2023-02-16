@@ -1,19 +1,18 @@
 import * as PIXI from "pixi.js";
-import { ITextStyle, TextStyle } from "pixi.js";
-import { Character } from "../pkg/chars";
+import { Character } from "@/pkg/quake/chars";
 import { OutlineFilter } from "pixi-filters";
 
 export interface CharacterPreset {
   offset: { x: number; y: number };
   fontScale: number;
-  textStyle: ITextStyle;
+  textStyle: PIXI.ITextStyle;
 }
 
 export function getDefaultCharacterPreset(): CharacterPreset {
   return {
     fontScale: 0.8,
     offset: { x: 0, y: 0 },
-    textStyle: new TextStyle({
+    textStyle: new PIXI.TextStyle({
       fontFamily: "monospace",
     }),
   };

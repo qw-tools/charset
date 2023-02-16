@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import { Character } from "@/pkg/chars";
+import { Character } from "@/pkg/quake/chars";
 import { EditorCharacter } from "./EditorCharacter";
 
 export class CharacterContainer extends PIXI.Container {

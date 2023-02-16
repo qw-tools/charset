@@ -1,5 +1,4 @@
 import * as PIXI from "pixi.js";
-import { Application } from "pixi.js";
 import { CharacterContainer } from "./CharacterContainer";
 import {
   CHARACTER_COUNT,
@@ -60,7 +59,7 @@ export function getDefaultEditorPreset(): EditorPreset {
   };
 }
 
-export class EditorApplication extends Application {
+export class EditorApplication extends PIXI.Application {
   charContainer = new CharacterContainer(characters);
   grid: GridLines = new GridLines();
 
